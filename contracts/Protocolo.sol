@@ -33,11 +33,14 @@ contract ProtocoloCentralFactory {
     function criar(address _remetente , string _tipoProtocolo, string _assunto) returns (address rprotocolo ) {
         address _newProtocolo = address(new Protocolo(_remetente,_tipoProtocolo,_assunto));
         protocolos.push(_newProtocolo);
-        return protocolos[0];
+        return _newProtocolo;
+    }
+
+    function obter(uint _id) returns (Protocolo protocolo) {
+       Protocolo p = Protocolo(protocolos[_id]);
+       return p;
     }
     
-
-
   
 
    
