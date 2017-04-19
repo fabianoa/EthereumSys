@@ -11,7 +11,7 @@ module.exports = {
     dtp: {
       host: 'n461d0116e00362-ext.nuvemdtp',
       port: 8080,
-      network_id: '1900' // Match any network id
+      network_id: '*' // Match any network id
     }
   }
 }

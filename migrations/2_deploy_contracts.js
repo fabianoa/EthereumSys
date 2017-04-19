@@ -1,9 +1,8 @@
-var Users = artifacts.require("./Users.sol");
 var Protocolo = artifacts.require("Protocolo");
-var ProtocoloCentralFactory= artifacts.require("ProtocoloCentralFactory")
+var ProtocoloManager= artifacts.require("ProtocoloManager")
 
 
 module.exports = function(deployer) {
    deployer.deploy(Protocolo);
-   deployer.deploy(ProtocoloCentralFactory);
+   deployer.deploy(ProtocoloManager);
 };
